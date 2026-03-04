@@ -28,8 +28,8 @@ export const authOptions: NextAuthOptions = {
     jwt({ token, user }) {
       if (user) {
         token.id = user.id;
-        token.email = user.email;
-        token.name = user.name;
+        token.email = user.email ?? undefined;
+        token.name = user.name ?? undefined;
       }
       return token;
     },

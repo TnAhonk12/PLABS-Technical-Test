@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #faf6f0;
+  --roast: #2f1b10;
+  --kopi-mid: #b07d3d;
+  --kopi-light: #e5d2b3;
+}
+
+body {
+  background: var(--cream);
+  color: var(--roast);
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+}
